@@ -2,16 +2,19 @@
 
    - 更新：
 
-     ```bash
+     ```
      bash auto-update-this-repo.sh
      ```
 
    - 妈的网络又要手动配置真的服了
 
-     ``` sudo
+     ![报错1](./报错1.png)
+     
+     ![报错2](./报错2.png)
+
+     ``` 
      sudo dhclient ens33
      ```
-
      
 
 2023.10.16
