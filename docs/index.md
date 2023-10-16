@@ -8,10 +8,16 @@
 
      ```
      sudo service NetworkManager stop
+     ```
+     
+     ``` 
      sudo rm /var/lib/NetworkManager/NetworkManager.state
+     ```
+     
+     ```
      sudo service NetworkManager start
      ```
-
+     
      原文链接 https://blog.csdn.net/weixin_44126988/article/details/128581200
 
 ## 2023.10.16
