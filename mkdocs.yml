@@ -29,12 +29,13 @@ theme:
 edit_uri: edit/main/docs
 
 nav:
-  - 主页: index.md 
+  - 主页: index.md
+  - 456: 123/456.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
 extra:
-  homepage: http://haohaha.cn
+  homepage: http://xmbtx.github.io/xmbtx-blog/
   social: # icons
 #   - icon: fontawesome/brands/bilibili
 #     link: https://space.bilibili.com/
