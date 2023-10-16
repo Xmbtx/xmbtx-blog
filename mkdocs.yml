@@ -29,9 +29,10 @@ theme:
 edit_uri: edit/main/docs
 
 nav:
-  - 主页:
-    - 123: index.md
+  - 123:
     - 456: 123/456.md
+  - 主页:
+    - Home: index.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
