@@ -29,8 +29,8 @@ theme:
 edit_uri: edit/main/docs
 
 nav:
-  - 135:
-    - 246: 123/456.md
+  - 附录:
+    - 虚拟机c++学习记录Day1: 123/456.md
   - 主页:
     - Home: index.md
 
