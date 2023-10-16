@@ -30,7 +30,7 @@ edit_uri: edit/main/docs
 
 nav:
   - 主页:
-#   - Home: index.md
+#    - Home: index.md
     - 456: 123/456.md
 
 extra_css:
