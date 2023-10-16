@@ -30,7 +30,7 @@ edit_uri: edit/main/docs
 
 nav:
   - 主页: index.md
-  - 456: 123/456.md
+    - 456: 123/456.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
