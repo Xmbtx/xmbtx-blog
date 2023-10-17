@@ -30,7 +30,7 @@ edit_uri: edit/main/docs
 
 nav:
   - 附录:
-    - 虚拟机c++学习记录Day1: 123/456.md
+    - 虚拟机c++学习记录Day1: c/c++.md
   - 主页:
     - Home: index.md
 
