@@ -48,3 +48,31 @@
 - 图片加载：
 
   ![0](./picture load.png)
+
+
+
+
+
+
+
+测试区
+
+[![图片](networkW1.png)](javascript:void(0);)
+
+<div id="image-modal" class="modal">
+  <span class="close" onclick="closeImageModal()">&times;</span>
+  <img src="networkW1.png" id="modal-image">
+</div>
+
+<script>
+function openImageModal() {
+  var modal = document.getElementById("image-modal");
+  var modalImage = document.getElementById("modal-image");
+  modal.style.display = "block";
+  modalImage.src = "networkW1.png";
+}
+function closeImageModal() {
+  var modal = document.getElementById("image-modal");
+  modal.style.display = "none";
+}
+</script>
