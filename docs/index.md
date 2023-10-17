@@ -95,13 +95,15 @@
 </head>
 <body>
 
-<div class="image-container">
-  [![图片](networkW1.png)](javascript:void(0);)
+<!-- 图片链接，点击时触发JavaScript函数 -->
+<a href="javascript:void(0);" onclick="openImageModal()">
+  <img src="networkW1.png" alt="图片">
+</a>
 
-  <div id="image-modal" class="modal">
-    <span class="close" onclick="closeImageModal()">&times;</span>
-    <img src="networkW1.png" id="modal-image">
-  </div>
+<!-- 模态框 -->
+<div id="image-modal" class="modal">
+  <span class="close" onclick="closeImageModal()">&times;</span>
+  <img src="networkW1.png" id="modal-image">
 </div>
 
 <script>
