@@ -33,17 +33,18 @@
      <details>
          <summary>报错图片</summary>
          <p>
-             <img src="报错1.png"/>
-             <img src="报错2.png"/>
+             <img src="networkW1.png"/>
+             <img src="networkW2.png"/>
          </p>
      </details>
-     
+
+
      之前的解决方案：
-     
+
      ``` 
      sudo dhclient ens33
      ```
 
 - 图片加载：
 
-  ![0](./图片.png)
+  ![0](./picture load.png)
