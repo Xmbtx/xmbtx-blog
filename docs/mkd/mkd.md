@@ -1,5 +1,23 @@
 # Markdown小记
 
+## 基础编写
+
+- ### 标题
+
+    - 一级#
+    - 二级##
+    - 三级###
+
+- ### 无序列表
+
+    - -或*
+
+- ### 引用
+
+    - 用这个>
+
+
+
 ## 图标引用：[图标仓库](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/brands)
 
 ### 搜索寻找你想要的图标，复制文件名称
@@ -7,6 +25,8 @@
 - Font-Awesome/svgs/brands/accessible-icon.svg
 
   复制accessible-icon即可
+
+
 
 ## 折叠图片：[原文链接](https://www.cnblogs.com/cnblogswilliam/p/14448830.html)
 
@@ -35,7 +55,6 @@
 
 
 
-
 ## 将markdown文本转成html文本
 
 ### 即显示源代码
@@ -48,20 +67,4 @@
 ```
 
 
-
-## 基础编写
-
-- ### 标题
-
-    - 一级#
-    - 二级##
-    - 三级###
-
-- ### 无序列表
-
-    - -或*
-
-- ### 引用
-
-    - 用这个>
 
