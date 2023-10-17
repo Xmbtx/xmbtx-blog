@@ -57,11 +57,51 @@
 
 测试区
 
-[![图片](networkW1.png)](javascript:void(0);)
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS 样式用于模态框 */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
 
-<div id="image-modal" class="modal">
-  <span class="close" onclick="closeImageModal()">&times;</span>
-  <img src="networkW1.png" id="modal-image">
+    /* CSS 样式用于关闭按钮 */
+    .close {
+      color: #fff;
+      float: right;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
+    /* CSS 样式用于图片 */
+    #modal-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      max-height: 80%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-container">
+  [![图片](networkW1.png)](javascript:void(0);)
+
+  <div id="image-modal" class="modal">
+    <span class="close" onclick="closeImageModal()">&times;</span>
+    <img src="networkW1.png" id="modal-image">
+  </div>
 </div>
 
 <script>
@@ -71,8 +111,12 @@ function openImageModal() {
   modal.style.display = "block";
   modalImage.src = "networkW1.png";
 }
+
 function closeImageModal() {
   var modal = document.getElementById("image-modal");
   modal.style.display = "none";
 }
 </script>
+
+</body>
+</html>
