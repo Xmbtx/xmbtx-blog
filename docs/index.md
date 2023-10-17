@@ -33,7 +33,7 @@
      <details>
          <summary>报错图片</summary>
          <p>
-             <a.href="https://xmbtx.github.io/xmbtx-blog/networkW1.png"><img src="networkW1.png"/></a>
+             <a href="https://xmbtx.github.io/xmbtx-blog/networkW1.png"><img src="networkW1.png"/></a>
              <img src="networkW2.png"/>
          </p>
      </details>
