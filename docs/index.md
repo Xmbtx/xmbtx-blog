@@ -18,7 +18,7 @@
      sudo service NetworkManager start
      ```
      
-     原文链接 https://blog.csdn.net/weixin_44126988/article/details/128581200
+     [原文链接](https://blog.csdn.net/weixin_44126988/article/details/128581200)
 
 ## 2023.10.16
 
