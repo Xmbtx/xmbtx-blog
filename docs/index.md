@@ -74,24 +74,27 @@
       background-color: rgba(0,0,0,0.9);
     }
 
-    /* CSS 样式用于关闭按钮 */
-    .close {
-      color: #fff;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
+    /* CSS 样式用于模态框 */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0,0,0,0.9);
     }
     
     /* CSS 样式用于图片 */
     #modal-image {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 100vh;
       display: inline-block;
       margin: 0 auto;
     }
+    
   </style>
 </head>
 <body>
