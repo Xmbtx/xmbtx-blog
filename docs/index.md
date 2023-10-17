@@ -33,7 +33,7 @@
      <details>
          <summary>报错图片</summary>
          <p>
-             <img src="networkW1.png"/>
+             <a.href="networkW1.png"><img src="networkW1.png"/></a>
              <img src="networkW2.png"/>
          </p>
      </details>
