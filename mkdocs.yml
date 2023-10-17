@@ -43,6 +43,9 @@ extra:
 #   - icon: fontawesome/brands/bilibili
 #     link: https://space.bilibili.com/
 #     name: Bilibili | Xmbtx # 鼠标悬浮提示
+    - icon: fontawesome/brands/accessible-icon
+      link: https://github.com/Xmbtx/xmbtx-blog/tree/master
+      name: GitHub | Xmbtxの仓库
     - icon: fontawesome/brands/github
       link: https://github.com/Xmbtx
       name: GitHub | Xmbtx
