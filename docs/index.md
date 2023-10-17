@@ -78,13 +78,13 @@
     .close {
       color: #fff;
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 15px;
+      right: 15px;
       font-size: 30px;
       font-weight: bold;
       cursor: pointer;
     }
-
+    
     /* CSS 样式用于图片 */
     #modal-image {
       max-width: 100%;
