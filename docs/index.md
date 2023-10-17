@@ -80,19 +80,30 @@
       position: fixed;
       z-index: 1;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
       width: 100%;
-      text-align: center;
-      background-color: rgba(0,0,0,0.9);
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* CSS 样式用于关闭按钮 */
+    .close {
+      color: #fff;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
     
     /* CSS 样式用于图片 */
     #modal-image {
       max-width: 100%;
-      max-height: 100vh;
-      display: inline-block;
-      margin: 0 auto;
+      max-height: 100%;
     }
     
   </style>
