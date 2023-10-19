@@ -11,7 +11,6 @@
 
   靠，为什么上次没搜到这个解决方案
   
-  
 ```bash  
 sudo service NetworkManager stop
   
@@ -21,17 +20,15 @@ sudo service NetworkManager start
   
 ```
 
-
-
 [原文链接](https://blog.csdn.net/weixin_44126988/article/details/128581200)
 
 ## 2023.10.16 更新，载入
 
    - 更新：
 
-     ```
-     bash auto-update-this-repo.sh
-     ```
+```
+bash auto-update-this-repo.sh
+```
 
    - 妈的网络又要手动配置真的服了
 
@@ -43,12 +40,11 @@ sudo service NetworkManager start
          </p>
      </details>
 
+之前的解决方案：
 
-     之前的解决方案：
-    
-     ``` 
-     sudo dhclient ens33
-     ```
+``` 
+sudo dhclient ens33
+```
 
 - 图片加载：
 
