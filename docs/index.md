@@ -12,16 +12,14 @@
   靠，为什么上次没搜到这个解决方案
   
   
-
-  ```bash
+```bash  
+sudo service NetworkManager stop
   
-  sudo service NetworkManager stop
+sudo rm /var/lib/NetworkManager/NetworkManager.state
   
-  sudo rm /var/lib/NetworkManager/NetworkManager.state
+sudo service NetworkManager start
   
-  sudo service NetworkManager start
-  
-  ```
+```
 
 
 
