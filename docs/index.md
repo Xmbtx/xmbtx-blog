@@ -3,15 +3,22 @@
 ## 2023.10.23 c转d二战
 
 - 上次转盘因为奇奇怪怪的原因导致上传功能一直有问题，今天复制后开机选择的移动该虚拟机（另外一个是复制虚拟机，好像不用选那个因为你是在同一个电脑上不同盘的移动不影响网络配置）
-- 目前一切正常
+- 目前一切正常(aaaaaa)
 
 ## 2023.10.22 忘了说了，昨天那玩意后来又不能正常上传了
 
 - 不知道为啥昨天复制过去的虚拟机又不能正常上传了，开摆！大不了直接用原来的就是了
 
+  <details>
+       <summary>报错图片</summary>
+       <p>
+           <a href="https://xmbtx.github.io/xmbtx-blog/uploadE.png"><img src="uploadE.png"/></a>
+       </p>
+   </details>
+
 ## 2023.10.21 虚拟机c盘转d盘，上传报错
 
-- 但愿一次成功吧（算成功了吧大概）aaaa
+- 但愿一次成功吧（算成功了吧大概）
 - 太抽象了，上传的时候报错connect reset by 20.205.243.166 port 22，could not read from remote repository.
   - 上网搜了一下，说连自己热点（最开始用的本校网络）结果成功了，但是其他用本校网络的人正常上传，离谱
   - [原文链接](https://blog.csdn.net/Wrysmile0308/article/details/128801870?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-128801870-blog-125123963.235%5Ev38%5Epc_relevant_sort_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-128801870-blog-125123963.235%5Ev38%5Epc_relevant_sort_base2&utm_relevant_index=2)
