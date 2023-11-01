@@ -34,7 +34,7 @@
       </p>
   </details>
 
-## 新建文件
+## 新建、打开文件
 
 - 在文件夹内右键，点击open in terminal，输入touch 你想起的文件名.md
 
@@ -48,3 +48,27 @@
   </details>
 
 - 创建完文件后，右键文件选择![open with](./application.png)，点击下面![view all](./view all.png)，从里面找到![typora](./typora.png)点击，点击后点击右上角Selsct就行（就能用typora打开md文件了)
+
+## 目录列表主页附录
+
+- 如果在博客里写目录的话，类似下图这样![list1](./list1.png)
+
+- 你需要在你的blog文件夹的mkdocs.yml文件的nav部分做一些修改，如下图
+
+  <details>
+      <summary>目录</summary>
+      <p>
+          <img src="list2.png"/>
+      </p>
+  </details>
+
+### 文件、文件夹格式
+
+- 怎么说捏，bolg的docs文件夹里直接创建的.md文件直接写就行比如那个index.md
+- 如果是docs文件夹里的文件，直接写什么什么.md就行
+- 如果在docs文件夹里的文件夹里的文件，你需要写 文件夹名/文件名.md （有时候多个文件夹嵌套写法不变，多写几个/就行）
+
+### 附录，列表格式
+
+- 不想说了，不会描述，看上面图吧
+
