@@ -10,6 +10,6 @@
 
 - 效果图如下
 
-  ![upload](upload.png)
+  ![upload](./upload.png)
 
   
