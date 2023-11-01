@@ -6,7 +6,9 @@
 
   ![picture](./picture.png)
   
-- 
+- 上面那玩意是没折叠的图片嗷，点不开的（我更新完博客特么点半天没点开还以为自己写错了）（其实你调成白色背景就能看出来了）
+
+- 因为图片折叠后可以节省很多空间所有下面图片大多是折叠形式出现
 
 ## 博客上传更新
 
@@ -14,13 +16,23 @@
 
 - 在blog文件夹内右键，点击open in terminal，输入bash a后，按tab键补全后回车
 
-  ![terminal](./terminal.png)
+  <details>
+      <summary>terminal</summary>
+      <p>
+          <img src="terminal.png"/>
+      </p>
+  </details>
 
 - (要是不会用tab可以直接输入bash auto-update-this-repo.sh后回车)
 
 - 效果图如下
 
-  ![upload](./upload.png)
+  <details>
+      <summary>上传</summary>
+      <p>
+          <img src="upload.png"/>
+      </p>
+  </details>
 
 ## 新建文件
 
@@ -29,8 +41,10 @@
 - touch后面要加空格，.md是文件类型
 
   <details>
-      <summary>新建文件（点击展开）</summary>
+      <summary>新建文件</summary>
       <p>
           <img src="touch.png"/>
       </p>
   </details>
+
+- 创建完文件后，右键文件选择![open with](./application.png)，点击下面![view all](./view all.png)，从里面找到![typora](./typora.png)点击，点击后点击右上角Selsct就行（就能用typora打开md文件了)
