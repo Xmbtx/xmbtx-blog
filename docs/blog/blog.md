@@ -12,4 +12,8 @@
 
   ![upload](./upload.png)
 
-  
+## 新建文件
+
+- 在文件夹内右键，点击open in terminal，输入touch 你想起的文件名.md
+- touch后面要加空格，.md是文件类型
+- aaa
