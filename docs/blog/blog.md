@@ -79,4 +79,4 @@
 ## 博客底部右下角图标链接、图标引用
 
 - 在[这个链接](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/brands)里面，往左边看，有很多类似![blbl](./blbl.png)的svg文件，点击后就可以查看图片效果，你可以根据文件名大概估计一下图片是啥样的
-- 这个东西在哪更改捏，点开你的mkdocs.yml文件（跟上文是同一个mkdocs）
+- 这个东西在哪更改捏，点开你的mkdocs.yml文件（跟上文是同一个mkdocs）,找到extra:那，里面有个social:，在social下面如
