@@ -35,6 +35,7 @@ nav:
     - Markdown学习记录: mkd/mkd.md
   - 主页:
     - Home: index.md
+    - 友链: friends.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
