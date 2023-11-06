@@ -69,8 +69,8 @@ bash auto-update-this-repo.sh
      <details>
          <summary>报错图片</summary>
          <p>
-             <a href="https://xmbtx.github.io/xmbtx-blog/networkW1.png"><img src="networkW1.png"/></a>
-             <a href="https://xmbtx.github.io/xmbtx-blog/networkW2.png"><img src="networkW2.png"/></a>
+             <img src="index/networkW1.png"/></a>
+             <img src="index/networkW2.png"/></a>
          </p>
      </details>
 
@@ -82,7 +82,7 @@ sudo dhclient ens33
 
 - 图片加载：
 
-  ![0](./picture load.png)
+  ![0](./index/picture load.png)
 
 
 
@@ -132,14 +132,15 @@ sudo dhclient ens33
 
 <!-- 图片链接，点击时触发JavaScript函数 -->
 <a href="javascript:void(0);" onclick="openImageModal()">
-  <img src="networkW1.png" alt="图片">
+  <img src="index/networkW1.png" alt="图片">
 </a>
 
 <!-- 模态框 -->
 <div id="image-modal" class="modal">
   <span class="close" onclick="closeImageModal()">&times;</span>
-  <img src="networkW1.png" id="modal-image">
+  <img src="index/networkW1.png" id="modal-image">
 </div>
+
 
 <script>
 function openImageModal() {
