@@ -1,5 +1,9 @@
 # 凶猫不太凶の虚拟机之旅
 
+## 2023.11.3 博客教程正式完工
+
+- 接浩哥 [博客维护](https://cs.haohaha.cn/greenhand/Blog_Maintainance_CW/Blog_Maintenance-Content_Workers/) （我觉得应该叫博客搭建）后全流程使用教学 [博客操作手册——re:从零开始的博客基础](https://xmbtx.github.io/xmbtx-blog/blog/blog/) 正式完工，忘了或者想巩固的直接看就行
+
 ## 2023.10.28 系统自启项不要乱改
 
 - 五天不见，mua的前两天把虚拟机的一个自启项关了之后就连不上网了，今天开完就好了，难蚌
@@ -148,7 +152,6 @@ function openImageModal() {
   modal.style.display = "block";
   modalImage.src = "index/networkW1.png";
 }
-
 
 function closeImageModal() {
   var modal = document.getElementById("image-modal");
