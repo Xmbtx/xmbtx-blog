@@ -141,14 +141,14 @@ sudo dhclient ens33
   <img src="index/networkW1.png" id="modal-image">
 </div>
 
-
 <script>
 function openImageModal() {
   var modal = document.getElementById("image-modal");
   var modalImage = document.getElementById("modal-image");
   modal.style.display = "block";
-  modalImage.src = "networkW1.png";
+  modalImage.src = "index/networkW1.png";
 }
+
 
 function closeImageModal() {
   var modal = document.getElementById("image-modal");
