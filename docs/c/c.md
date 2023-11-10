@@ -4,7 +4,6 @@
 
 - printf输出:
 
-
 - ```c
   int %d
   
@@ -13,8 +12,8 @@
   char myChar = 'A'; %c
   
   char name[] =""; %s
+  
   ```
-
 
 ## 2023.10.19
 
