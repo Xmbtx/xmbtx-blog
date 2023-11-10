@@ -4,16 +4,17 @@
 
 - printf输出:
 
-  ```c
-  int %d
+```c
   
-  float/double %f
-  
-  char myChar = 'A'; %c
-  
-  char name[] =""; %s
-  
-  ```
+int %d
+
+float/double %f
+
+char myChar = 'A'; %c
+
+char name[] =""; %s
+
+```
 
 ## 2023.10.19
 
