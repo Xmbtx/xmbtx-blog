@@ -6,8 +6,11 @@
 
 - ```c
   int %d
+  
   float/double %f
+  
   char myChar = 'A'; %c
+  
   char name[] =""; %s
   ```
 
