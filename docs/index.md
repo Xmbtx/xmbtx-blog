@@ -2,7 +2,7 @@
 
 ## 2023.11.3 博客教程正式完工
 
-- 接浩哥 [博客维护](https://cs.haohaha.cn/greenhand/Blog_Maintainance_CW/Blog_Maintenance-Content_Workers/) （我觉得应该叫博客搭建）后全流程使用教学 [博客操作手册——re:从零开始的博客基础](https://xmbtx.github.io/xmbtx-blog/blog/blog/) 正式完工，忘了或者想巩固的直接看就行
+- 接浩睿哥 [博客维护](https://cs.haohaha.cn/greenhand/Blog_Maintainance_CW/Blog_Maintenance-Content_Workers/) （我觉得应该叫博客搭建）后全流程使用教学 [博客操作手册——re:从零开始的博客基础](https://xmbtx.github.io/xmbtx-blog/blog/blog/) 正式完工，忘了或者想巩固的直接看就行
 
 ## 2023.10.28 系统自启项不要乱改
 
