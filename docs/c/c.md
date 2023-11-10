@@ -4,7 +4,7 @@
 
 - printf输出:
 
-- ```c
+  ```c
   int %d
   
   float/double %f
