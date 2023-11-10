@@ -1,4 +1,15 @@
-# 凶猫の虚拟机c++之旅（开摆）
+# 凶猫の虚拟机c/c++之旅（开摆）
+
+## 2023.11.10
+
+- printf输出:
+
+- ```c
+  int %d
+  float/double %f
+  char myChar = 'A'; %c
+  char name[] =""; %s
+  ```
 
 ## 2023.10.19
 
