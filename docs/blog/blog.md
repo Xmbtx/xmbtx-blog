@@ -114,3 +114,7 @@
 
 - 忘了是咋回事了，下次碰见再说
 
+### insufficient permission for adding an object to repository database .(少权限上传)
+
+- 大概一句sudo chmod -R 777 ./就能解决，我也不知道是干啥了导致的
+- [原文链接](https://blog.csdn.net/cheng1a/article/details/126101129)
