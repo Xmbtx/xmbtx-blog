@@ -41,6 +41,7 @@ nav:
     - blog基础: blog/blog.md
     - 虚拟机c++学习记录: c/c.md
     - Markdown学习记录: mkd/mkd.md
+    - Markdown插件学习: mkd/mkdex.md
   - 主页:
     - Home: index.md
     - 友链: friends.md
