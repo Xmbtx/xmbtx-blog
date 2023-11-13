@@ -3,6 +3,8 @@ theme:
   name: material
   icon:
     logo: material/library
+    admonition:
+      abstract: fontawesome/brands/bilibili
   palette:
     - scheme: slate # 夜间模式
       primary: indigo
@@ -26,7 +28,7 @@ theme:
     - content.code.copy
   language: zh
 
-markdown_extensions:
+markdown_extensions: # 折叠彩条图标插件
   - admonition
   - pymdownx.details
   - pymdownx.superfences
