@@ -1,8 +1,8 @@
-# markdown 插件内容（仅记录，想学自学）
+# markdown 额外内容（仅记录，想学自学）
 
 ## 各种颜色，可/不可折叠，不同图标的框
 
-- [插件链接](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks-inline-end)
+- [原文链接](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks-inline-end)
 - 效果展示
 
 ??? abstract "没啥可看的"
@@ -29,3 +29,7 @@
 
         1. 这应该是i
         2. 这应该是ii
+
+- 注意上面这玩意要四个空格
+
+- [原文链接](https://squidfunk.github.io/mkdocs-material/reference/lists/)
