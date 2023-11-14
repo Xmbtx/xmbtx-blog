@@ -36,11 +36,11 @@
 
 - [原文链接](https://squidfunk.github.io/mkdocs-material/reference/lists/)
 
-- 1
-    - 2
-        - 3
-            - 4
-- 1
-    - 2
-        - 3
-            - 4
+1. 1
+    1. 2
+        1. 3
+            1. 4
+1. 1
+    1. 2
+        1. 3
+            1. 4
