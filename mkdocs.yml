@@ -28,10 +28,13 @@ theme:
     - content.code.copy
   language: zh
 
-markdown_extensions: # 折叠彩条图标插件
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+markdown_extensions: 
+  - admonition # 折叠彩条图标插件
+  - pymdownx.details # 折叠彩条图标插件
+  - pymdownx.superfences # 折叠彩条图标插件
+  - def_list # 任务列表
+  - pymdownx.tasklist: # 任务列表
+      custom_checkbox: true #  任务列表
 
 
 edit_uri: edit/main/docs
