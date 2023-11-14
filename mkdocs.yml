@@ -35,7 +35,7 @@ markdown_extensions:
   - def_list # 任务列表
   - pymdownx.tasklist: # 任务列表
       custom_checkbox: true #  任务列表
-
+  - mdx_truly_sane_lists
 
 edit_uri: edit/main/docs
 
