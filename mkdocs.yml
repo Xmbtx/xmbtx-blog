@@ -42,7 +42,11 @@ markdown_extensions:
   - pymdownx.snippets: # 术语拓展
       auto_append: # 术语拓展
         - includes/abbreviations.md # 术语拓展
-
+  - attr_list # 表情图标拓展
+  - pymdownx.emoji: # 表情图标拓展
+      emoji_index: !!python/name:material.extensions.emoji.twemoji # 表情图标拓展
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # 表情图标拓展
+      
 edit_uri: edit/main/docs
 
 nav:
