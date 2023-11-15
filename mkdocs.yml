@@ -39,6 +39,9 @@ markdown_extensions:
   - abbr # 工具提示
   - attr_list # 工具提示
   - pymdownx.snippets # 工具提示
+  - pymdownx.snippets: # 术语拓展
+      auto_append: # 术语拓展
+        - includes/abbreviations.md # 术语拓展
 
 edit_uri: edit/main/docs
 
