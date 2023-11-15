@@ -36,6 +36,9 @@ markdown_extensions:
   - pymdownx.tasklist: # 任务列表
       custom_checkbox: true #  任务列表
 #  - mdx_truly_sane_lists
+  - abbr # 工具提示
+  - attr_list # 工具提示
+  - pymdownx.snippets # 工具提示
 
 edit_uri: edit/main/docs
 
@@ -44,7 +47,7 @@ nav:
     - blog基础: blog/blog.md
     - 虚拟机c++学习记录: c/c.md
     - Markdown学习记录: mkd/mkd.md
-    - Markdown插件学习: mkd/mkdex.md
+    - Markdownex: mkd/mkdex.md
   - 主页:
     - Home: index.md
     - 友链: friends.md

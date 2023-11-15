@@ -25,7 +25,7 @@
 
 - 还有下面这个傻逼功能
 
-<!--- --->
+<!------>
 
 1. 就
 
@@ -43,7 +43,7 @@
 
 1. 西
 
-<!--- --->
+<!------>
 
 - 逝世
 
@@ -54,3 +54,6 @@
 
 - [原文链接](https://squidfunk.github.io/mkdocs-material/reference/lists/)
 
+## 工具提示
+
+- [你还瞅？](https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click "你被骗了")
