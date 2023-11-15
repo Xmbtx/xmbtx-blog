@@ -57,3 +57,7 @@
 ## 工具提示
 
 - [你还瞅？](https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click "你被骗了")
+
+- [另外一种写法][111]
+
+- [111]: https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click "你又被骗了"
