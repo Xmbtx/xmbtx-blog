@@ -49,9 +49,8 @@
 
 ??? warning "要多加行注释"
 
-```
-![要多写行注释](./fix.png)
-```
+    ![要多写行注释](./fix.png)
+
 
 - [原文链接](https://squidfunk.github.io/mkdocs-material/reference/lists/)
 
