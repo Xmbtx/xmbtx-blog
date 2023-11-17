@@ -46,6 +46,11 @@ markdown_extensions:
   - pymdownx.emoji: # 表情图标拓展
       emoji_index: !!python/name:material.extensions.emoji.twemoji # 表情图标拓展
       emoji_generator: !!python/name:material.extensions.emoji.to_svg # 表情图标拓展
+  - pymdownx.critic # 格式
+  - pymdownx.caret # 格式
+  - pymdownx.keys # 格式
+  - pymdownx.mark # 格式
+  - pymdownx.tilde # 格式
       
 edit_uri: edit/main/docs
 
