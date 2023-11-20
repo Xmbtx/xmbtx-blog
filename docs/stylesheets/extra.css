@@ -21,15 +21,15 @@
 }
 .md-typeset .admonition.fby,
 .md-typeset details.fby {
-  border-color: rgb(254, 219, 10);
+  border-color: rgb(255, 255, 61);
 }
 .md-typeset .fby > .admonition-title,
 .md-typeset .fby > summary {
-  background-color: rgba(254, 219, 10, 0.1);
+  background-color: rgba(255, 255, 61, 0.1);
 }
 .md-typeset .fby > .admonition-title::before,
 .md-typeset .fby > summary::before {
-  background-color: rgb(254, 219, 10);
+  background-color: rgb(255, 255, 61);
   -webkit-mask-image: var(--md-admonition-icon--pied-piper);
           mask-image: var(--md-admonition-icon--pied-piper);
 }
