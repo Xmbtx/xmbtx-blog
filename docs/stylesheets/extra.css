@@ -12,8 +12,8 @@
 .md-typeset .lhhd > .admonition-title::before,
 .md-typeset .lhhd > summary::before {
   background-color: rgb(254, 219, 10);
-  -webkit-mask-image: var(--md-admonition-icon--pied-piper);
-          mask-image: var(--md-admonition-icon--pied-piper);
+  -webkit-mask-image: var(--md-admonition-icon--lhhd);
+          mask-image: var(--md-admonition-icon--lhhd);
 }
 
 {
@@ -30,6 +30,6 @@
 .md-typeset .fby > .admonition-title::before,
 .md-typeset .fby > summary::before {
   background-color: rgb(255, 255, 61);
-  -webkit-mask-image: var(--md-admonition-icon--pied-piper);
-          mask-image: var(--md-admonition-icon--pied-piper);
+  -webkit-mask-image: var(--md-admonition-icon--fby);
+          mask-image: var(--md-admonition-icon--fby);
 }
