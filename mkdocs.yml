@@ -46,11 +46,11 @@ markdown_extensions:
   - pymdownx.emoji: # 表情图标拓展
       emoji_index: !!python/name:material.extensions.emoji.twemoji # 表情图标拓展
       emoji_generator: !!python/name:material.extensions.emoji.to_svg # 表情图标拓展
-  - pymdownx.critic # 格式
-  - pymdownx.caret # 格式
-  - pymdownx.keys # 格式
-  - pymdownx.mark # 格式
-  - pymdownx.tilde # 格式
+  - pymdownx.critic # 格式Formatting
+  - pymdownx.caret # 格式Formatting
+  - pymdownx.keys # 格式Formatting
+  - pymdownx.mark # 格式Formatting
+  - pymdownx.tilde # 格式Formatting
       
 edit_uri: edit/main/docs
 
@@ -67,6 +67,7 @@ nav:
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - stylesheets/extra.css # 自定义折叠彩条图
 extra:
   homepage: http://xmbtx.github.io/xmbtx-blog/
   social: # icons
