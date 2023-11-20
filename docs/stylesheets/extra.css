@@ -3,15 +3,15 @@
 }
 .md-typeset .admonition.liuhan,
 .md-typeset details.liuhan {
-  border-color: rgb(43, 155, 70);
+  border-color: rgb(255, 219, 10);
 }
 .md-typeset .liuhan > .admonition-title,
 .md-typeset .liuhan > summary {
-  background-color: rgba(43, 155, 70, 0.1);
+  background-color: rgba(255, 219, 10, 0.1);
 }
 .md-typeset .liuhan > .admonition-title::before,
 .md-typeset .liuhan > summary::before {
-  background-color: rgb(43, 155, 70);
+  background-color: rgb(255, 219, 10);
   -webkit-mask-image: var(--md-admonition-icon--pied-piper);
           mask-image: var(--md-admonition-icon--pied-piper);
 }
