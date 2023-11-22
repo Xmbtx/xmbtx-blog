@@ -1,7 +1,5 @@
 # 凶猫不太凶の虚拟机之旅
 
-<iframe style="width: 700px;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=3547248&quality=0" frameborder="no"    framespacing="0" scrolling="no" allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
-
 ## 2023.11.22 雌小鬼编译器
 
 - 雌小鬼GCC编译器完工！真的太强了

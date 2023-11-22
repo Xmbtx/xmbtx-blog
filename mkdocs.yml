@@ -64,6 +64,7 @@ nav:
   - 主页:
     - Home: index.md
     - 友链: friends.md
+    - 直播间: live.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
