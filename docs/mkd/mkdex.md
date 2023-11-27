@@ -88,3 +88,5 @@
 - :fontawesome-brands-bilibili:{ .bilibili }
 
 - :material-rabbit-variant-outline:{ .heart }
+- :chicken:{ .rotate1 }
+- [原文链接](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)

@@ -74,3 +74,11 @@
   color: #00a400;
   animation: heart 1000ms infinite;
 }
+
+@keyframes rotate1 {
+  rotate: 45deg;
+}
+.rotate1 {
+  animation: heart 1000ms infinite;
+}
+
