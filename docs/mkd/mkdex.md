@@ -72,10 +72,8 @@
 ## 工具提示
 
 - [你还瞅？](https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click "你被骗了")
-
 - [另外一种写法][111]
-
-- :fontawesome-regular-face-laugh-wink:{ title="你还是被骗了" herf="https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click" }
+- :fontawesome-regular-face-laugh-wink:{ title="你还是被骗了" }
 
 - 你就非要 被骗三次 是吧
 
