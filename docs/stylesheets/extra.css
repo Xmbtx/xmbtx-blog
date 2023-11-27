@@ -69,8 +69,8 @@
   20%, 60% {
     transform: scale(1.15);
   }
-  color: #00a400;
 }
 .heart {
+  color: #00a400;
   animation: heart 1000ms infinite;
 }
