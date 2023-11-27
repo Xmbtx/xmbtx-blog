@@ -87,3 +87,4 @@
 
 - :fontawesome-brands-bilibili:{ .bilibili }
 
+- :fontawesome-brands-accessible-icon:{ .heart }
