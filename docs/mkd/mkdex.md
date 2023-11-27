@@ -83,3 +83,7 @@
 
 ## 表情图标
 
+- :sweat_smile:
+
+- :fontawesome-brands-bilibili:{ .bilibili }
+
