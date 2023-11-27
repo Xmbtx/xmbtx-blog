@@ -76,7 +76,9 @@
 }
 
 @keyframes rotate1 {
-  rotate: 45deg;
+  100% {
+    rotate: 360deg;
+  }
 }
 .rotate1 {
   animation: heart 1000ms infinite;
