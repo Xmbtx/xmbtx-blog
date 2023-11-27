@@ -88,5 +88,6 @@
 - :fontawesome-brands-bilibili:{ .bilibili }
 
 - :material-rabbit-variant-outline:{ .heart }
+- 很好的插件使我迪克旋转
 - :chicken:{ .rotate1 }
 - [原文链接](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)
