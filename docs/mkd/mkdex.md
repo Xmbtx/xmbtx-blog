@@ -75,11 +75,13 @@
 
 - [另外一种写法][111]
 
-- :fontawesome-regular-face-laugh-wink:{ title="你还是被骗了" }
+- :fontawesome-regular-face-laugh-wink:{ title="你还是被骗了" herf="https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click" }
 
 - 你就非要 被骗三次 是吧
 
 [111]: https://www.bilibili.com/video/BV1hq4y1s7VH/?spm_id_from=333.337.search-card.all.click "你又被骗了"
+
+- [原文链接](https://squidfunk.github.io/mkdocs-material/reference/tooltips/)
 
 ## 表情图标
 
@@ -91,3 +93,6 @@
 - 很好的插件使我迪克旋转
 - :chicken:{ .rotate1 }
 - [原文链接](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)
+
+## 格式
+
