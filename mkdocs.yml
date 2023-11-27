@@ -58,13 +58,16 @@ nav:
   - 附录:
     - blog基础: blog/blog.md
     - 虚拟机c++学习记录: c/c.md
-    - Markdown学习记录: mkd/mkd.md
-    - Markdownex: mkd/mkdex.md
     - 小记: record/searching.md
   - 主页:
     - Home: index.md
     - 友链: friends.md
     - 直播间: live.md
+  - Markdown:
+    - Markdown学习记录: mkd/mkd.md
+    - Markdownex: mkd/mkdex.md
+  - OS:
+    - Linux是怎样工作的: os/linux_work.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
