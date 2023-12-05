@@ -63,6 +63,7 @@ nav:
     - Home: index.md
     - 友链: friends.md
     - 直播间: live.md
+    - 测试: test.md
   - Markdown:
     - Markdown学习记录: mkd/mkd.md
     - Markdownex: mkd/mkdex.md
