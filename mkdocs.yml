@@ -27,7 +27,9 @@ theme:
     - search.highlight
     - content.code.copy
   language: zh
-
+  icon:
+    annotation: material/star-four-points-circle # 注释图标
+    
 markdown_extensions: 
   - admonition # 折叠彩条图标插件
   - pymdownx.details # 折叠彩条图标插件
