@@ -51,7 +51,10 @@ markdown_extensions:
   - pymdownx.keys # 格式Formatting
   - pymdownx.mark # 格式Formatting
   - pymdownx.tilde # 格式Formatting
-      
+  - attr_list # 注释Annotations
+  - md_in_html # 注释Annotations
+  - pymdownx.superfences # 注释Annotations
+  
 edit_uri: edit/main/docs
 
 nav:
