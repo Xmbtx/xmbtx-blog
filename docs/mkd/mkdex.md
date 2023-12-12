@@ -126,3 +126,14 @@
 [我的b站主页 :fontawesome-brands-bilibili:{ .bilibili}](https://space.bilibili.com/626736057){ .md-button .md-button--primary }
 
 [原文链接](https://squidfunk.github.io/mkdocs-material/reference/buttons/)
+
+## 表格
+
+|    类型    |              说明              |
+| :--------: | :----------------------------: |
+|   total    |           物理内存量           |
+|    free    |           可用内存量           |
+| buff/cache | 缓冲区缓存与页面缓存站用的内存 |
+| available  |         实际可用内存量         |
+
+[原文链接](https://squidfunk.github.io/mkdocs-material/reference/data-tables/)
