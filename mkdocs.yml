@@ -14,7 +14,7 @@ theme:
         name: 切换至日间模式
     - scheme: default # 日间模式
       primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
+      accent: orange # 链接等可交互元件的高亮色（按钮也算）
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
@@ -54,7 +54,7 @@ markdown_extensions:
   - pymdownx.tilde # 格式Formatting
   - md_in_html # 注释Annotations
   - pymdownx.superfences # 注释Annotations
-  
+  - tables # 表格
 edit_uri: edit/main/docs
 
 nav:
