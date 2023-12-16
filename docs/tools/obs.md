@@ -7,7 +7,7 @@
 
 ### 下载配置文件
 
-- 我会把obs的会议配置以压缩包的形式发到群里
+- <a href="https://github.com/Xmbtx/xmbtx-blog/raw/master/docs/tools/%E4%BC%9A%E8%AE%AE%E9%85%8D%E7%BD%AE.zip" download="true">点击下载</a>
 - 下载完后解压就行
 
 ### 下载obs
@@ -128,4 +128,3 @@
 - 如果你的图片换位置了，在obs里面显示不出来了，那请你点击来源里面图片那项，右键，点击设置，点击浏览，重新选择图片，点击确定
 - 如果你想用你的电脑进行宣讲或者ppt展示，请你点击来源里面的窗口采集那项，右键，点击设置，重新选择你的窗口（要在全屏的时候选择），点击确定
 
-<a href="https://github.com/Xmbtx/xmbtx-blog/blob/master/docs/tools/%E4%BC%9A%E8%AE%AE%E9%85%8D%E7%BD%AE.zip" download>点击此处下载文件</a>
