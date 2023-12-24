@@ -59,6 +59,7 @@ edit_uri: edit/main/docs
 
 nav:
   - 附录:
+    - 使用说明: manual.md
     - blog基础: blog/blog.md
     - 虚拟机c++学习记录: c/c.md
     - 小记: record/searching.md
@@ -67,7 +68,6 @@ nav:
     - 友链: friends.md
     - 直播间: live.md
     - 测试: test.md
-    - 测试1: test1.md
   - Markdown:
     - Markdown学习记录: mkd/mkd.md
     - Markdownex: mkd/mkdex.md
