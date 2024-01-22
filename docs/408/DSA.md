@@ -2,7 +2,7 @@
 
 ## day1
 
-??? abstract "day1"
+??? abstract "day1 真的好累"
 
     ![101](./101.jpg)
     ![102](./102.jpg)
