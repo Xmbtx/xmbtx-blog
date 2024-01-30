@@ -75,9 +75,9 @@ and the repository exists.
 
 - [x] 50
 
-### 
+### 1.30
 
-- [ ] 50
+- [x] 50
 
 ### 
 
