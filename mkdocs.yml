@@ -76,6 +76,7 @@ nav:
     - Linux是怎样工作的: os/linux_work.md
   - 408:
     - 数据结构: 408/DSA.md
+    - 计算机组成原理: 408/jizu.md
   - 实用工具:
     - google及chatgpt全流程: tools/google chatgpt.md
     - obs虚拟摄像头使用及配置: tools/obs.md
