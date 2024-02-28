@@ -80,6 +80,7 @@ nav:
   - 实用工具:
     - google及chatgpt全流程: tools/google chatgpt.md
     - obs虚拟摄像头使用及配置: tools/obs.md
+    - 虚拟机扩容: tools/kuorong.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
