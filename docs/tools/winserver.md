@@ -7,7 +7,7 @@
 3. 上网查询你电脑型号进入bios的方法
 4. 准备好笔记本并下载烧录工具
 
-#### 烧录
+### 烧录
 
 - 下载烧录工具
 
@@ -19,7 +19,7 @@
 
 ![img](https://osca-ielab-bigc.feishu.cn/space/api/box/stream/download/asynccode/?code=MTgyZjUxZTE5NjgzOWI4NmJlZTBlYzI1ODBjOGMwZmVfY0EzRHR2SjZkQ1FRMW9wbFpQUmVrTUJVY3Q5Mm16d0NfVG9rZW46VUl5UGJLSHJFbzFFd3R4ODI1RGNXcTZpbnNiXzE3MjI5NTk1MDk6MTcyMjk2MzEwOV9WNA)
 
-#### 更改usb为最高级启动项
+### 更改usb为最高级启动项
 
 - 进入bios，找到启动选项
 
@@ -31,7 +31,7 @@
 
 - 保存并重启
 
-#### 安装系统
+### 安装系统
 
 - 这里安装的是win sever
 
@@ -51,7 +51,7 @@
 
 - 然后进入就ok了
 
-#### 无线网络配置
+### 无线网络配置
 
 1. 安装BL-150SM网卡驱动（根据无线接收器自行查找驱动程序）
 2. 拷入电脑安装即可
