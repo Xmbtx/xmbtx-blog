@@ -82,6 +82,7 @@ nav:
     - obs虚拟摄像头使用及配置: tools/obs.md
     - 虚拟机扩容: tools/kuorong.md
     - server2022: tools/winserver.md
+    - cursor白嫖教程简洁版: tools/cursor.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
