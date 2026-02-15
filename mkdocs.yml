@@ -83,6 +83,9 @@ nav:
     - 虚拟机扩容: tools/kuorong.md
     - server2022: tools/winserver.md
     - cursor白嫖教程简洁版: tools/cursor.md
+    - trae连vmware虚拟机: tools/connect.md
+
+
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
