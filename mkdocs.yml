@@ -84,6 +84,7 @@ nav:
     - server2022: tools/winserver.md
     - cursor白嫖教程简洁版: tools/cursor.md
     - trae连vmware虚拟机: tools/connect.md
+    - Clash TUN: tools/clashtun.md
 
 
 
