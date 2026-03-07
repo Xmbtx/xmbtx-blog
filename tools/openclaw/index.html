@@ -1,0 +1,3302 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../clashtun/">
+      
+      
+        <link rel="next" href="../fix/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Ubuntu2204 OpenClaw安装 - Xmbtx</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8.17%202.76A10.1%2010.1%200%200%201%2012%202c1.31%200%202.61.26%203.83.76%201.21.5%202.31%201.24%203.24%202.17s1.67%202.03%202.17%203.24c.5%201.22.76%202.52.76%203.83%200%202.65-1.05%205.2-2.93%207.07A9.97%209.97%200%200%201%2012%2022a10.1%2010.1%200%200%201-3.83-.76%2010%2010%200%200%201-3.24-2.17A9.97%209.97%200%200%201%202%2012c0-2.65%201.05-5.2%202.93-7.07.93-.93%202.03-1.67%203.24-2.17M12%2017l1.56-3.42L17%2012l-3.44-1.56L12%207l-1.57%203.44L7%2012l3.43%201.58z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../mkdocs/css/no-footer.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#openclaw-vmware-ubuntu-2204" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="http://xmbtx.github.io/xmbtx-blog/" title="Xmbtx" class="md-header__button md-logo" aria-label="Xmbtx" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xmbtx
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ubuntu2204 OpenClaw安装
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../manual/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../mkd/mkd/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Markdown
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../os/linux_work/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  OS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../408/DSA/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  408
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../google%20chatgpt/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  实用工具
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="http://xmbtx.github.io/xmbtx-blog/" title="Xmbtx" class="md-nav__button md-logo" aria-label="Xmbtx" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Xmbtx
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    附录
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    使用说明
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blog基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/c/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机c++学习记录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../record/searching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    小记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../daily/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    打卡
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主页
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    主页
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    友链
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../live/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直播间
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Markdown
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkd/mkd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown学习记录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkd/mkdex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdownex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    OS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux_work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux是怎样工作的
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    408
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    408
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../408/DSA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../408/jizu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实用工具
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    实用工具
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../google%20chatgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    google及chatgpt全流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    obs虚拟摄像头使用及配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kuorong/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机扩容
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../winserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    server2022
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cursor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cursor白嫖教程简洁版
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    trae连vmware虚拟机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clashtun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clash TUN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu2204 OpenClaw安装
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu2204 OpenClaw安装
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、环境信息
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑屏记录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、环境信息
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="openclaw-vmware-ubuntu-2204">OpenClaw 本地部署记录（VMware + Ubuntu 22.04）</h1>
+<h2 id="_1">一、环境信息</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>虚拟化</td>
+<td>VMware</td>
+</tr>
+<tr>
+<td>系统</td>
+<td>Ubuntu 22.04</td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>v22</td>
+</tr>
+<tr>
+<td>OpenClaw</td>
+<td>2026.3.2</td>
+</tr>
+<tr>
+<td>模型</td>
+<td>openai-codex/gpt-5.3-codex</td>
+</tr>
+<tr>
+<td>用户</td>
+<td>凶猫</td>
+</tr>
+<tr>
+<td>Gateway端口</td>
+<td>18789</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="_2">二、安装流程</h1>
+<h2 id="1">1 更新系统</h2>
+<div class="highlight"><pre><span></span><code>sudo apt update
+sudo apt upgrade -y
+sudo apt install -y curl git ca-certificates lsof
+</code></pre></div>
+<hr />
+<h2 id="2-openclaw">2 安装 OpenClaw</h2>
+<p>官方安装脚本：</p>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://openclaw.ai/install.sh | bash
+</code></pre></div>
+<p>安装脚本会自动：</p>
+<ul>
+<li>检查 Node.js</li>
+<li>如果没有 Node.js ≥22 自动安装</li>
+<li>安装 OpenClaw CLI</li>
+<li>修复 npm 权限</li>
+</ul>
+<hr />
+<h2 id="3-path">3 PATH 修复</h2>
+<p>安装完成后提示：</p>
+<div class="highlight"><pre><span></span><code>PATH missing npm global bin dir
+</code></pre></div>
+<p>解决：</p>
+<div class="highlight"><pre><span></span><code>echo &#39;export PATH=&quot;$HOME/.npm-global/bin:$PATH&quot;&#39; &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre></div>
+<p>验证：</p>
+<div class="highlight"><pre><span></span><code>which openclaw
+</code></pre></div>
+<hr />
+<h1 id="onboarding">三、Onboarding 配置</h1>
+<h2 id="1_1">1 安全提示</h2>
+<p>选择：</p>
+<div class="highlight"><pre><span></span><code>Yes
+</code></pre></div>
+<p>表示理解 OpenClaw 仍处于 beta。</p>
+<hr />
+<h2 id="2-onboarding">2 Onboarding 模式</h2>
+<p>选择：</p>
+<div class="highlight"><pre><span></span><code>QuickStart
+</code></pre></div>
+<p>原因：</p>
+<ul>
+<li>自动配置 Gateway</li>
+<li>自动初始化 agent</li>
+<li>适合第一次部署</li>
+</ul>
+<hr />
+<h2 id="3">3 模型选择</h2>
+<p>使用 OpenAI：</p>
+<div class="highlight"><pre><span></span><code>openai-codex/gpt-5.3-codex
+</code></pre></div>
+<p>最终保持默认：</p>
+<div class="highlight"><pre><span></span><code>Keep current
+</code></pre></div>
+<hr />
+<h1 id="skills">四、Skills 配置</h1>
+<p>初始选择：</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>作用</th>
+<th>是否推荐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clawhub</td>
+<td>skill管理</td>
+<td>推荐</td>
+</tr>
+<tr>
+<td>github</td>
+<td>GitHub集成</td>
+<td>推荐</td>
+</tr>
+<tr>
+<td>summarize</td>
+<td>文本总结</td>
+<td>推荐</td>
+</tr>
+<tr>
+<td>nano-pdf</td>
+<td>PDF处理</td>
+<td>推荐</td>
+</tr>
+</tbody>
+</table>
+<p>其他技能暂未启用。</p>
+<hr />
+<h1 id="_3">五、依赖问题</h1>
+<p>部分技能安装失败：</p>
+<div class="highlight"><pre><span></span><code>github -&gt; brew not installed
+summarize -&gt; brew not installed
+nano-pdf -&gt; uv not installed
+</code></pre></div>
+<p>原因：</p>
+<p>OpenClaw 很多 skills 依赖 Homebrew 或 uv。</p>
+<p>解决方法（可选）：</p>
+<h3 id="homebrew">安装 Homebrew</h3>
+<div class="highlight"><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre></div>
+<hr />
+<h3 id="uv">安装 uv</h3>
+<div class="highlight"><pre><span></span><code>curl -LsSf https://astral.sh/uv/install.sh | sh
+</code></pre></div>
+<hr />
+<h1 id="gateway">六、Gateway 服务</h1>
+<p>安装后自动创建 systemd 用户服务：</p>
+<div class="highlight"><pre><span></span><code>~/.config/systemd/user/openclaw-gateway.service
+</code></pre></div>
+<p>查看状态：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user status openclaw-gateway
+</code></pre></div>
+<p>监听端口：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1:18789
+</code></pre></div>
+<hr />
+<h1 id="dashboard">七、访问 Dashboard</h1>
+<p>默认地址：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;token&gt;
+</code></pre></div>
+<p>说明：</p>
+<ul>
+<li>token 为控制台认证</li>
+<li>WebSocket 连接必须带 token</li>
+</ul>
+<p>如果缺少 token 会出现：</p>
+<div class="highlight"><pre><span></span><code>unauthorized: gateway token missing
+</code></pre></div>
+<hr />
+<h1 id="127001-ip">八、127.0.0.1 与 IP 访问问题</h1>
+<h3 id="_4">可以访问</h3>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789
+</code></pre></div>
+<h3 id="_5">无法访问</h3>
+<div class="highlight"><pre><span></span><code>http://虚拟机IP:18789
+</code></pre></div>
+<p>原因：</p>
+<p>Gateway 默认绑定：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1
+</code></pre></div>
+<p>即：</p>
+<div class="highlight"><pre><span></span><code>Bind: loopback
+</code></pre></div>
+<p>只允许本机访问。</p>
+<hr />
+<h2 id="_6">如果需要局域网访问</h2>
+<p>修改绑定地址：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set gateway.bind 0.0.0.0
+systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>访问：</p>
+<div class="highlight"><pre><span></span><code>http://虚拟机IP:18789/#token=&lt;token&gt;
+</code></pre></div>
+<hr />
+<h1 id="doctor">九、Doctor 检查</h1>
+<p>运行：</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>关键状态：</p>
+<div class="highlight"><pre><span></span><code>Plugins loaded
+Agents active
+No critical errors
+</code></pre></div>
+<hr />
+<h1 id="memory-search">十、Memory Search 问题</h1>
+<p>doctor 提示：</p>
+<div class="highlight"><pre><span></span><code>Memory search enabled but no embedding provider
+</code></pre></div>
+<p>原因：</p>
+<p>需要 API key：</p>
+<ul>
+<li>OPENAI_API_KEY</li>
+<li>GEMINI_API_KEY</li>
+<li>VOYAGE_API_KEY</li>
+<li>MISTRAL_API_KEY</li>
+</ul>
+<p>如果暂时不用记忆功能，可以关闭：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set agents.defaults.memorySearch.enabled false
+</code></pre></div>
+<hr />
+<h1 id="vm">十一、性能优化（VM 推荐）</h1>
+<p>doctor 推荐设置：</p>
+<div class="highlight"><pre><span></span><code>mkdir -p /var/tmp/openclaw-compile-cache
+</code></pre></div>
+<p>写入：</p>
+<div class="highlight"><pre><span></span><code>echo &#39;export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache&#39; &gt;&gt; ~/.zshrc
+echo &#39;export OPENCLAW_NO_RESPAWN=1&#39; &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre></div>
+<p>作用：</p>
+<ul>
+<li>减少 Node 重编译</li>
+<li>降低 VM CPU 消耗</li>
+</ul>
+<hr />
+<h1 id="_7">十二、关键目录</h1>
+<p>程序：</p>
+<div class="highlight"><pre><span></span><code>~/.npm-global/lib/node_modules/openclaw
+</code></pre></div>
+<p>CLI：</p>
+<div class="highlight"><pre><span></span><code>~/.npm-global/bin/openclaw
+</code></pre></div>
+<p>配置与数据：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>systemd 服务：</p>
+<div class="highlight"><pre><span></span><code>~/.config/systemd/user/openclaw-gateway.service
+</code></pre></div>
+<hr />
+<h1 id="_8">十三、常用命令</h1>
+<p>状态</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>健康检查</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>检测 gateway</p>
+<div class="highlight"><pre><span></span><code>openclaw gateway probe
+</code></pre></div>
+<p>查看日志</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -n 80
+</code></pre></div>
+<p>重启 gateway</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="_9">十四、当前系统状态总结</h1>
+<p>当前部署状态：</p>
+<ul>
+<li>OpenClaw 安装成功</li>
+<li>Gateway 运行正常</li>
+<li>Dashboard 可访问</li>
+<li>Agent 默认配置完成</li>
+</ul>
+<p>未配置项：</p>
+<ul>
+<li>skills 依赖（brew / uv）</li>
+<li>memory embeddings</li>
+<li>web search API</li>
+<li>外部服务 API</li>
+</ul>
+<hr />
+<h1 id="_10">十五、后续建议</h1>
+<p>优先配置：</p>
+<ol>
+<li>Homebrew（方便安装 skill）</li>
+<li>uv（nano-pdf依赖）</li>
+<li>Brave Search API（web_search）</li>
+<li>memory embeddings</li>
+</ol>
+<p>建议逐步扩展 skills，而不是一次全部安装。</p>
+<h1 id="_11">十六、安全启动、关闭与日常使用</h1>
+<h2 id="1-openclaw">1 启动 OpenClaw</h2>
+<p>OpenClaw 在 Linux 上通过 <strong>systemd 用户服务</strong>运行。</p>
+<p>查看状态：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user status openclaw-gateway
+</code></pre></div>
+<p>如果服务没有运行，可以启动：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<p>如果需要重启：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>查看是否正常监听端口：</p>
+<div class="highlight"><pre><span></span><code>ss -lntp | grep 18789
+</code></pre></div>
+<p>正常情况下会看到类似：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1:18789
+</code></pre></div>
+<hr />
+<h1 id="2-openclaw_1">2 关闭 OpenClaw</h1>
+<p>安全关闭 Gateway：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user stop openclaw-gateway
+</code></pre></div>
+<p>确认关闭：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user status openclaw-gateway
+</code></pre></div>
+<p>状态应为：</p>
+<div class="highlight"><pre><span></span><code>inactive (dead)
+</code></pre></div>
+<p>如果只想临时停止而不影响开机自动启动，可以只执行 <code>stop</code>。</p>
+<p>如果想禁用自动启动：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user disable openclaw-gateway
+</code></pre></div>
+<p>重新启用：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user enable openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="3-dashboard-token">3 获取 Dashboard Token</h1>
+<p>OpenClaw 的 Web UI 使用 <strong>token 进行访问认证</strong>。</p>
+<p>Dashboard 地址格式：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>Token 可以通过以下方式获得：</p>
+<h3 id="status">方法一：使用 status 命令</h3>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>输出中通常会显示 Dashboard 地址。</p>
+<hr />
+<h3 id="gateway_1">方法二：查看 Gateway 日志</h3>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -n 50
+</code></pre></div>
+<p>日志中通常会包含 dashboard URL。</p>
+<hr />
+<h3 id="_12">方法三：重新生成访问状态</h3>
+<p>如果 token 丢失，可以重启 gateway：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>然后再次查看：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<hr />
+<h1 id="4">4 安全使用建议</h1>
+<h2 id="1-token">1）不要公开 token</h2>
+<p>token 相当于控制权限。</p>
+<p>避免：</p>
+<ul>
+<li>在公开仓库分享</li>
+<li>在截图中暴露</li>
+<li>在聊天记录中长期保存</li>
+</ul>
+<p>如果 token 泄露：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>即可刷新访问状态。</p>
+<hr />
+<h2 id="2">2）默认只允许本机访问</h2>
+<p>OpenClaw 默认绑定：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1
+</code></pre></div>
+<p>也就是：</p>
+<div class="highlight"><pre><span></span><code>Bind: loopback
+</code></pre></div>
+<p>优点：</p>
+<ul>
+<li>只有本机可以访问</li>
+<li>局域网设备无法连接</li>
+<li>安全性更高</li>
+</ul>
+<hr />
+<h2 id="3_1">3）如果需要远程访问</h2>
+<p>可以通过 SSH 转发访问：</p>
+<div class="highlight"><pre><span></span><code>ssh -L 18789:127.0.0.1:18789 用户@服务器
+</code></pre></div>
+<p>然后在浏览器打开：</p>
+<div class="highlight"><pre><span></span><code>http://localhost:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>这种方式比直接开放端口更安全。</p>
+<hr />
+<h1 id="5">5 日常使用流程</h1>
+<p>推荐日常操作顺序：</p>
+<h2 id="_13">启动服务</h2>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<hr />
+<h2 id="_14">检查状态</h2>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<hr />
+<h2 id="_15">打开控制面板</h2>
+<p>浏览器访问：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<hr />
+<h2 id="agent">使用 Agent</h2>
+<p>在 Dashboard 中：</p>
+<ul>
+<li>创建新会话</li>
+<li>输入任务</li>
+<li>查看 agent 输出</li>
+</ul>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>hello
+</code></pre></div>
+<p>或</p>
+<div class="highlight"><pre><span></span><code>explain openclaw architecture
+</code></pre></div>
+<hr />
+<h2 id="_16">查看日志（排错）</h2>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -n 50
+</code></pre></div>
+<p>实时日志：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -f
+</code></pre></div>
+<hr />
+<h2 id="_17">停止服务</h2>
+<div class="highlight"><pre><span></span><code>systemctl --user stop openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="6">6 推荐维护命令</h1>
+<p>健康检查：</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>检查 gateway：</p>
+<div class="highlight"><pre><span></span><code>openclaw gateway probe
+</code></pre></div>
+<p>查看状态：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<hr />
+<h1 id="7">7 备份重要数据</h1>
+<p>OpenClaw 的主要数据目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>建议定期备份：</p>
+<div class="highlight"><pre><span></span><code>tar -czvf openclaw-backup.tar.gz ~/.openclaw
+</code></pre></div>
+<hr />
+<h1 id="_18">十七、快速日常操作清单</h1>
+<p>启动：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<p>查看状态：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>打开控制台：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>查看日志：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -f
+</code></pre></div>
+<p>关闭：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user stop openclaw-gateway
+</code></pre></div>
+<h1 id="openclaw">十八、OpenClaw 故障排查速查表</h1>
+<p>本章节总结常见部署问题及解决方法。</p>
+<p>适用于：</p>
+<ul>
+<li>VMware / Docker / 服务器部署</li>
+<li>Ubuntu / Linux 环境</li>
+<li>本地 Gateway 运行模式</li>
+</ul>
+<hr />
+<h1 id="1-dashboard">1 Dashboard 打不开</h1>
+<h2 id="_19">现象</h2>
+<p>浏览器访问：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789
+</code></pre></div>
+<p>出现：</p>
+<div class="highlight"><pre><span></span><code>无法连接
+connection refused
+</code></pre></div>
+<hr />
+<h2 id="gateway_2">检查 Gateway 服务</h2>
+<div class="highlight"><pre><span></span><code>systemctl --user status openclaw-gateway
+</code></pre></div>
+<p>如果没有运行：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<hr />
+<h2 id="_20">检查端口监听</h2>
+<div class="highlight"><pre><span></span><code>ss -lntp | grep 18789
+</code></pre></div>
+<p>正常应看到：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1:18789
+</code></pre></div>
+<hr />
+<h1 id="2-gateway-unreachable">2 Gateway unreachable</h1>
+<h2 id="_21">现象</h2>
+<p>运行：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>显示：</p>
+<div class="highlight"><pre><span></span><code>Gateway unreachable (timeout)
+</code></pre></div>
+<hr />
+<h2 id="gateway_3">检查 Gateway</h2>
+<p>运行：</p>
+<div class="highlight"><pre><span></span><code>openclaw gateway probe
+</code></pre></div>
+<p>正常输出：</p>
+<div class="highlight"><pre><span></span><code>Reachable: yes
+Connect: ok
+RPC: ok
+</code></pre></div>
+<hr />
+<h2 id="_22">查看日志</h2>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -n 50
+</code></pre></div>
+<hr />
+<h1 id="3-unauthorized-token-missing">3 unauthorized / token missing</h1>
+<h2 id="_23">现象</h2>
+<p>日志出现：</p>
+<div class="highlight"><pre><span></span><code>unauthorized
+gateway token missing
+</code></pre></div>
+<hr />
+<h2 id="_24">原因</h2>
+<p>访问 Dashboard 时 <strong>没有带 token</strong>。</p>
+<hr />
+<h2 id="_25">正确访问方式</h2>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<hr />
+<h2 id="token">获取 token</h2>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>或查看日志：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="4-ip">4 虚拟机 IP 无法访问</h1>
+<h2 id="_26">现象</h2>
+<p>访问：</p>
+<div class="highlight"><pre><span></span><code>http://虚拟机IP:18789
+</code></pre></div>
+<p>出现：</p>
+<div class="highlight"><pre><span></span><code>connection refused
+</code></pre></div>
+<p>但：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789
+</code></pre></div>
+<p>可以访问。</p>
+<hr />
+<h2 id="_27">原因</h2>
+<p>Gateway 默认绑定：</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1
+</code></pre></div>
+<p>即：</p>
+<div class="highlight"><pre><span></span><code>Bind: loopback
+</code></pre></div>
+<p>只允许本机访问。</p>
+<hr />
+<h2 id="_28">解决方法</h2>
+<p>修改绑定地址：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set gateway.bind 0.0.0.0
+systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>然后访问：</p>
+<div class="highlight"><pre><span></span><code>http://虚拟机IP:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<hr />
+<h1 id="5-skills">5 Skills 安装失败</h1>
+<h2 id="_29">现象</h2>
+<p>安装 skill 时出现：</p>
+<div class="highlight"><pre><span></span><code>brew not installed
+uv not installed
+</code></pre></div>
+<hr />
+<h2 id="_30">原因</h2>
+<p>OpenClaw skills 依赖第三方工具。</p>
+<p>例如：</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>依赖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>github</td>
+<td>gh CLI</td>
+</tr>
+<tr>
+<td>summarize</td>
+<td>brew</td>
+</tr>
+<tr>
+<td>nano-pdf</td>
+<td>uv</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="homebrew_1">安装 Homebrew</h2>
+<div class="highlight"><pre><span></span><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre></div>
+<hr />
+<h2 id="uv_1">安装 uv</h2>
+<div class="highlight"><pre><span></span><code>curl -LsSf https://astral.sh/uv/install.sh | sh
+</code></pre></div>
+<hr />
+<h1 id="6-memory-search-unavailable">6 Memory search unavailable</h1>
+<h2 id="_31">现象</h2>
+<p><code>openclaw doctor</code> 显示：</p>
+<div class="highlight"><pre><span></span><code>Memory search enabled but no embedding provider
+</code></pre></div>
+<hr />
+<h2 id="_32">原因</h2>
+<p>未配置 embedding provider API key。</p>
+<p>支持：</p>
+<ul>
+<li>OpenAI</li>
+<li>Gemini</li>
+<li>Voyage</li>
+<li>Mistral</li>
+</ul>
+<hr />
+<h2 id="_33">解决方法</h2>
+<h3 id="api-key">方法一：设置 API key</h3>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>export OPENAI_API_KEY=&quot;your_key&quot;
+</code></pre></div>
+<hr />
+<h3 id="memory-search_1">方法二：关闭 memory search</h3>
+<div class="highlight"><pre><span></span><code>openclaw config set agents.defaults.memorySearch.enabled false
+</code></pre></div>
+<hr />
+<h1 id="7-openclaw-command-not-found">7 OpenClaw command not found</h1>
+<h2 id="_34">现象</h2>
+<p>运行：</p>
+<div class="highlight"><pre><span></span><code>openclaw
+</code></pre></div>
+<p>出现：</p>
+<div class="highlight"><pre><span></span><code>command not found
+</code></pre></div>
+<hr />
+<h2 id="_35">原因</h2>
+<p>npm global bin 未加入 PATH。</p>
+<hr />
+<h2 id="_36">解决方法</h2>
+<div class="highlight"><pre><span></span><code>echo &#39;export PATH=&quot;$HOME/.npm-global/bin:$PATH&quot;&#39; &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre></div>
+<hr />
+<h1 id="8-nodejs">8 Node.js 版本不正确</h1>
+<h2 id="_37">现象</h2>
+<p>安装 OpenClaw 时出现：</p>
+<div class="highlight"><pre><span></span><code>Node.js version too old
+</code></pre></div>
+<hr />
+<h2 id="_38">要求</h2>
+<div class="highlight"><pre><span></span><code>Node &gt;= 22
+</code></pre></div>
+<hr />
+<h2 id="_39">检查版本</h2>
+<div class="highlight"><pre><span></span><code>node -v
+</code></pre></div>
+<hr />
+<h1 id="9-gateway">9 Gateway 日志查看</h1>
+<p>排查问题最重要的命令：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -f
+</code></pre></div>
+<p>实时日志输出。</p>
+<hr />
+<h1 id="10-openclaw">10 重置 OpenClaw</h1>
+<p>如果配置混乱，可以清空配置：</p>
+<p>⚠ 会删除所有 agent 数据</p>
+<div class="highlight"><pre><span></span><code>rm -rf ~/.openclaw
+</code></pre></div>
+<p>然后重新初始化：</p>
+<div class="highlight"><pre><span></span><code>openclaw onboard
+</code></pre></div>
+<hr />
+<h1 id="_40">十九、最常用排查命令</h1>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>查看整体状态。</p>
+<hr />
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>系统健康检查。</p>
+<hr />
+<div class="highlight"><pre><span></span><code>openclaw gateway probe
+</code></pre></div>
+<p>检测 Gateway 是否正常。</p>
+<hr />
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -f
+</code></pre></div>
+<p>实时查看日志。</p>
+<hr />
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<p>重启 Gateway。</p>
+<hr />
+<h1 id="_41">二十、部署完成检查清单</h1>
+<p>确认以下项目正常：</p>
+<ul>
+<li>Gateway service running</li>
+<li>Dashboard 可以访问</li>
+<li>Agent 可以创建 session</li>
+<li>模型可以正常响应</li>
+<li><code>openclaw doctor</code> 无 critical 错误</li>
+</ul>
+<h1 id="openclaw_1">二十一、OpenClaw 架构说明（简化版）</h1>
+<p>OpenClaw 是一个 <strong>本地 AI Agent 平台</strong>，主要由以下几个核心组件组成：</p>
+<div class="highlight"><pre><span></span><code>浏览器 Dashboard
+        │
+        │ HTTP / WebSocket
+        │
+OpenClaw Gateway
+        │
+        │ Agent Runtime
+        │
+Agent (LLM)
+        │
+ ┌───────────────┬───────────────┬───────────────┐
+ │               │               │               │
+Skills         Memory         Plugins        Tools
+ │               │               │               │
+CLI / API      Embeddings     Extensions     System actions
+</code></pre></div>
+<hr />
+<h1 id="1-gateway">1 Gateway（核心服务）</h1>
+<p>Gateway 是 OpenClaw 的 <strong>核心服务器</strong>。</p>
+<p>主要职责：</p>
+<ul>
+<li>接收 Dashboard 请求</li>
+<li>管理 Agent</li>
+<li>管理 session</li>
+<li>调用模型 API</li>
+<li>调用 skills</li>
+<li>维护 memory</li>
+</ul>
+<p>运行方式：</p>
+<div class="highlight"><pre><span></span><code>systemd user service
+</code></pre></div>
+<p>服务名称：</p>
+<div class="highlight"><pre><span></span><code>openclaw-gateway
+</code></pre></div>
+<p>默认端口：</p>
+<div class="highlight"><pre><span></span><code>18789
+</code></pre></div>
+<p>查看服务：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user status openclaw-gateway
+</code></pre></div>
+<p>日志：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="2-dashboardweb">2 Dashboard（Web 控制台）</h1>
+<p>Dashboard 是 OpenClaw 的 <strong>管理界面</strong>。</p>
+<p>作用：</p>
+<ul>
+<li>创建 Agent session</li>
+<li>发送任务</li>
+<li>查看输出</li>
+<li>调试 tools</li>
+<li>管理 skills</li>
+<li>查看 logs</li>
+</ul>
+<p>访问方式：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<p>通信方式：</p>
+<div class="highlight"><pre><span></span><code>WebSocket
+</code></pre></div>
+<p>浏览器 → Gateway</p>
+<hr />
+<h1 id="3-agentai">3 Agent（AI 执行体）</h1>
+<p>Agent 是 <strong>真正执行任务的 AI 实体</strong>。</p>
+<p>每个 Agent 包含：</p>
+<div class="highlight"><pre><span></span><code>Model
+Prompt
+Memory
+Tools
+Skills
+</code></pre></div>
+<p>默认 agent：</p>
+<div class="highlight"><pre><span></span><code>main
+</code></pre></div>
+<p>存储目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw/agents/main
+</code></pre></div>
+<p>结构示例：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw/
+ ├─ agents
+ │   └─ main
+ │       ├─ sessions
+ │       ├─ agent
+ │       └─ memory
+</code></pre></div>
+<hr />
+<h1 id="4-sessions">4 Sessions（会话）</h1>
+<p>每次对话都会创建一个 session。</p>
+<p>session 用于：</p>
+<ul>
+<li>保存上下文</li>
+<li>保存对话历史</li>
+<li>保存工具调用</li>
+</ul>
+<p>文件：</p>
+<div class="highlight"><pre><span></span><code>sessions.json
+</code></pre></div>
+<p>位置：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw/agents/main/sessions
+</code></pre></div>
+<hr />
+<h1 id="5-models">5 Models（模型）</h1>
+<p>OpenClaw 支持多个模型 provider。</p>
+<p>例如：</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI</td>
+<td>GPT</td>
+</tr>
+<tr>
+<td>Anthropic</td>
+<td>Claude</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>Gemini</td>
+</tr>
+<tr>
+<td>Mistral</td>
+<td>Mistral</td>
+</tr>
+</tbody>
+</table>
+<p>本次配置使用：</p>
+<div class="highlight"><pre><span></span><code>openai-codex/gpt-5.3-codex
+</code></pre></div>
+<p>调用方式：</p>
+<div class="highlight"><pre><span></span><code>OAuth
+</code></pre></div>
+<p>或：</p>
+<div class="highlight"><pre><span></span><code>API KEY
+</code></pre></div>
+<hr />
+<h1 id="6-skills">6 Skills（技能系统）</h1>
+<p>Skills 是 <strong>Agent 的扩展能力</strong>。</p>
+<p>例如：</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>github</td>
+<td>操作 GitHub</td>
+</tr>
+<tr>
+<td>nano-pdf</td>
+<td>PDF 解析</td>
+</tr>
+<tr>
+<td>summarize</td>
+<td>文档摘要</td>
+</tr>
+<tr>
+<td>clawhub</td>
+<td>skill 管理</td>
+</tr>
+</tbody>
+</table>
+<p>skills 本质是：</p>
+<div class="highlight"><pre><span></span><code>CLI 工具 + wrapper
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>gh CLI
+</code></pre></div>
+<hr />
+<h1 id="7-plugins">7 Plugins（插件）</h1>
+<p>Plugins 是 OpenClaw 内部模块。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>memory-core
+web_search
+canvas
+</code></pre></div>
+<p>查看：</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>输出示例：</p>
+<div class="highlight"><pre><span></span><code>Plugins
+Loaded: 4
+Disabled: 34
+</code></pre></div>
+<hr />
+<h1 id="8-memory">8 Memory（长期记忆）</h1>
+<p>Memory 用于：</p>
+<ul>
+<li>存储历史信息</li>
+<li>支持 semantic search</li>
+</ul>
+<p>需要 embedding provider。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>OpenAI embeddings
+Voyage embeddings
+Gemini embeddings
+</code></pre></div>
+<p>如果没有配置 API key：</p>
+<div class="highlight"><pre><span></span><code>Memory unavailable
+</code></pre></div>
+<p>可以关闭：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set agents.defaults.memorySearch.enabled false
+</code></pre></div>
+<hr />
+<h1 id="9-tools">9 Tools（工具）</h1>
+<p>Tools 是 Agent 可以调用的系统操作。</p>
+<p>例如：</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>web_search</td>
+<td>搜索互联网</td>
+</tr>
+<tr>
+<td>canvas</td>
+<td>UI 操作</td>
+</tr>
+<tr>
+<td>filesystem</td>
+<td>读写文件</td>
+</tr>
+<tr>
+<td>exec</td>
+<td>执行命令</td>
+</tr>
+</tbody>
+</table>
+<p>安全机制：</p>
+<div class="highlight"><pre><span></span><code>allowCommands
+denyCommands
+</code></pre></div>
+<p>用于限制 Agent 权限。</p>
+<hr />
+<h1 id="10-canvasui">10 Canvas（UI 渲染系统）</h1>
+<p>Canvas 用于：</p>
+<ul>
+<li>UI 输出</li>
+<li>图形界面</li>
+<li>可视化结果</li>
+</ul>
+<p>日志示例：</p>
+<div class="highlight"><pre><span></span><code>canvas host mounted
+</code></pre></div>
+<p>路径：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw/canvas
+</code></pre></div>
+<hr />
+<h1 id="11-hooks">11 Hooks（自动化）</h1>
+<p>Hooks 用于自动触发操作。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>/new
+/reset
+</code></pre></div>
+<p>触发：</p>
+<div class="highlight"><pre><span></span><code>session-memory
+command-logger
+</code></pre></div>
+<hr />
+<h1 id="12">12 配置文件</h1>
+<p>主配置：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw/openclaw.json
+</code></pre></div>
+<p>包含：</p>
+<div class="highlight"><pre><span></span><code>gateway
+agents
+skills
+tools
+security
+</code></pre></div>
+<p>修改配置：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set
+</code></pre></div>
+<p>或：</p>
+<div class="highlight"><pre><span></span><code>openclaw configure
+</code></pre></div>
+<hr />
+<h1 id="13">13 安全模型</h1>
+<p>OpenClaw 默认是：</p>
+<div class="highlight"><pre><span></span><code>single operator trust model
+</code></pre></div>
+<p>也就是：</p>
+<div class="highlight"><pre><span></span><code>单用户可信环境
+</code></pre></div>
+<p>如果要开放给多人：</p>
+<p>需要：</p>
+<div class="highlight"><pre><span></span><code>access control
+sandbox
+tool restrictions
+</code></pre></div>
+<hr />
+<h1 id="14">14 数据目录</h1>
+<p>最重要的数据目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>包含：</p>
+<div class="highlight"><pre><span></span><code>agents
+sessions
+canvas
+config
+logs
+</code></pre></div>
+<p>备份方法：</p>
+<div class="highlight"><pre><span></span><code>tar -czvf openclaw-backup.tar.gz ~/.openclaw
+</code></pre></div>
+<hr />
+<h1 id="15">15 完整系统流程</h1>
+<p>OpenClaw 执行任务流程：</p>
+<div class="highlight"><pre><span></span><code>用户输入
+   │
+Dashboard
+   │
+WebSocket
+   │
+Gateway
+   │
+Agent
+   │
+LLM 推理
+   │
+Tools / Skills
+   │
+返回结果
+   │
+Dashboard 显示
+</code></pre></div>
+<hr />
+<h1 id="_42">二十二、总结</h1>
+<p>完整系统包含：</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gateway</td>
+<td>核心服务</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>Web UI</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>AI 执行体</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>扩展能力</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>长期记忆</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>系统操作</td>
+</tr>
+</tbody>
+</table>
+<p>运行方式：</p>
+<div class="highlight"><pre><span></span><code>systemd user service
+</code></pre></div>
+<p>访问方式：</p>
+<div class="highlight"><pre><span></span><code>浏览器 Dashboard
+</code></pre></div>
+<p>数据存储：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<h1 id="openclaw_2">二十三、OpenClaw 迁移与打包</h1>
+<p>当需要：</p>
+<ul>
+<li>更换电脑</li>
+<li>迁移虚拟机</li>
+<li>打包带走环境</li>
+<li>服务器迁移</li>
+</ul>
+<p>只需要备份 <strong>两个核心部分</strong>：</p>
+<div class="highlight"><pre><span></span><code>OpenClaw 数据
+Node 环境
+</code></pre></div>
+<hr />
+<h1 id="1-openclaw_1">1 OpenClaw 数据目录</h1>
+<p>最重要的数据目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>里面包含：</p>
+<div class="highlight"><pre><span></span><code>agents
+sessions
+memory
+canvas
+config
+logs
+</code></pre></div>
+<p>结构示例：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+ ├─ agents
+ │   └─ main
+ │       ├─ sessions
+ │       ├─ memory
+ │       └─ agent
+ │
+ ├─ canvas
+ ├─ logs
+ └─ openclaw.json
+</code></pre></div>
+<hr />
+<h1 id="2-openclaw_2">2 打包 OpenClaw 数据</h1>
+<p>在 Linux 运行：</p>
+<div class="highlight"><pre><span></span><code>tar -czvf openclaw-backup.tar.gz ~/.openclaw
+</code></pre></div>
+<p>生成：</p>
+<div class="highlight"><pre><span></span><code>openclaw-backup.tar.gz
+</code></pre></div>
+<p>这个文件包含：</p>
+<ul>
+<li>agent</li>
+<li>session</li>
+<li>memory</li>
+<li>配置</li>
+</ul>
+<hr />
+<h1 id="3-openclaw">3 恢复 OpenClaw 数据</h1>
+<p>在新机器：</p>
+<p>解压：</p>
+<div class="highlight"><pre><span></span><code>tar -xzvf openclaw-backup.tar.gz -C ~/
+</code></pre></div>
+<p>恢复目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>然后重启 gateway：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="4-nodejs">4 迁移 Node.js 环境</h1>
+<p>OpenClaw 是通过 npm 安装的。</p>
+<p>查看安装：</p>
+<div class="highlight"><pre><span></span><code>which openclaw
+</code></pre></div>
+<p>通常在：</p>
+<div class="highlight"><pre><span></span><code>~/.npm-global/bin/openclaw
+</code></pre></div>
+<p>重新安装即可：</p>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://openclaw.ai/install.sh | bash
+</code></pre></div>
+<p>恢复 <code>.openclaw</code> 数据即可继续使用。</p>
+<hr />
+<h1 id="5-vmware">5 VMware 直接迁移（推荐）</h1>
+<p>如果使用 VMware：</p>
+<p>最简单的方法是 <strong>直接复制虚拟机</strong>。</p>
+<p>复制文件：</p>
+<div class="highlight"><pre><span></span><code>vmname.vmdk
+vmname.vmx
+</code></pre></div>
+<p>新电脑导入即可。</p>
+<p>优点：</p>
+<ul>
+<li>Node 环境完整</li>
+<li>OpenClaw 已配置</li>
+<li>模型认证保留</li>
+<li>无需重新部署</li>
+</ul>
+<hr />
+<h1 id="6-openclaw">6 OpenClaw 完整迁移步骤</h1>
+<p>推荐流程：</p>
+<h3 id="1_2">1 备份数据</h3>
+<div class="highlight"><pre><span></span><code>tar -czvf openclaw-backup.tar.gz ~/.openclaw
+</code></pre></div>
+<hr />
+<h3 id="2-openclaw_3">2 新机器安装 OpenClaw</h3>
+<div class="highlight"><pre><span></span><code>curl -fsSL https://openclaw.ai/install.sh | bash
+</code></pre></div>
+<hr />
+<h3 id="3_2">3 恢复数据</h3>
+<div class="highlight"><pre><span></span><code>tar -xzvf openclaw-backup.tar.gz -C ~/
+</code></pre></div>
+<hr />
+<h3 id="4_1">4 启动服务</h3>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<hr />
+<h1 id="7_1">7 验证迁移成功</h1>
+<p>运行：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>检查：</p>
+<div class="highlight"><pre><span></span><code>Gateway running
+Agent loaded
+Sessions available
+</code></pre></div>
+<p>然后打开：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<hr />
+<h1 id="openclaw_3">二十四、OpenClaw 性能优化</h1>
+<p>如果运行环境是：</p>
+<ul>
+<li>虚拟机</li>
+<li>小服务器</li>
+<li>低配电脑</li>
+</ul>
+<p>建议进行以下优化。</p>
+<hr />
+<h1 id="1-node">1 Node 启动优化</h1>
+<p>OpenClaw 官方推荐：</p>
+<div class="highlight"><pre><span></span><code>NODE_COMPILE_CACHE
+OPENCLAW_NO_RESPAWN
+</code></pre></div>
+<p>设置环境变量：</p>
+<div class="highlight"><pre><span></span><code>export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache
+mkdir -p /var/tmp/openclaw-compile-cache
+export OPENCLAW_NO_RESPAWN=1
+</code></pre></div>
+<p>加入：</p>
+<div class="highlight"><pre><span></span><code>~/.zshrc
+</code></pre></div>
+<p>或：</p>
+<div class="highlight"><pre><span></span><code>~/.bashrc
+</code></pre></div>
+<hr />
+<h1 id="2_1">2 降低内存占用</h1>
+<p>关闭 memory search：</p>
+<div class="highlight"><pre><span></span><code>openclaw config set agents.defaults.memorySearch.enabled false
+</code></pre></div>
+<p>适合：</p>
+<ul>
+<li>不使用长期记忆</li>
+<li>仅使用 LLM 推理</li>
+</ul>
+<hr />
+<h1 id="3-plugins">3 减少 Plugins</h1>
+<p>查看：</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>禁用不需要的插件。</p>
+<hr />
+<h1 id="4-skills">4 减少 Skills</h1>
+<p>Skills 越多：</p>
+<div class="highlight"><pre><span></span><code>启动越慢
+</code></pre></div>
+<p>只保留常用：</p>
+<p>推荐：</p>
+<div class="highlight"><pre><span></span><code>github
+summarize
+nano-pdf
+clawhub
+</code></pre></div>
+<hr />
+<h1 id="5-agent">5 限制 Agent 工具</h1>
+<p>在配置中限制：</p>
+<div class="highlight"><pre><span></span><code>allowCommands
+</code></pre></div>
+<p>避免 Agent 频繁调用系统命令。</p>
+<hr />
+<h1 id="6_1">6 虚拟机资源建议</h1>
+<p>推荐 VMware 配置：</p>
+<div class="highlight"><pre><span></span><code>CPU: 4 core
+RAM: 8GB
+Disk: 40GB+
+</code></pre></div>
+<p>最低：</p>
+<div class="highlight"><pre><span></span><code>CPU: 2 core
+RAM: 4GB
+</code></pre></div>
+<hr />
+<h1 id="7_2">7 日志清理</h1>
+<p>OpenClaw 日志在：</p>
+<div class="highlight"><pre><span></span><code>/tmp/openclaw
+</code></pre></div>
+<p>定期清理：</p>
+<div class="highlight"><pre><span></span><code>rm -rf /tmp/openclaw/*
+</code></pre></div>
+<hr />
+<h1 id="8">8 定期更新</h1>
+<p>更新 OpenClaw：</p>
+<div class="highlight"><pre><span></span><code>openclaw update
+</code></pre></div>
+<p>或：</p>
+<div class="highlight"><pre><span></span><code>npm update -g openclaw
+</code></pre></div>
+<hr />
+<h1 id="_43">二十五、完整部署总结</h1>
+<p>OpenClaw 本地部署结构：</p>
+<div class="highlight"><pre><span></span><code>Ubuntu VM
+   │
+Node.js 22
+   │
+OpenClaw Gateway
+   │
+Agent Runtime
+   │
+OpenAI / Claude / Gemini
+</code></pre></div>
+<p>核心目录：</p>
+<div class="highlight"><pre><span></span><code>~/.openclaw
+</code></pre></div>
+<p>核心服务：</p>
+<div class="highlight"><pre><span></span><code>openclaw-gateway
+</code></pre></div>
+<p>访问方式：</p>
+<div class="highlight"><pre><span></span><code>http://127.0.0.1:18789/#token=&lt;TOKEN&gt;
+</code></pre></div>
+<hr />
+<h1 id="_44">二十六、常用命令速查</h1>
+<p>查看状态：</p>
+<div class="highlight"><pre><span></span><code>openclaw status
+</code></pre></div>
+<p>健康检查：</p>
+<div class="highlight"><pre><span></span><code>openclaw doctor
+</code></pre></div>
+<p>检查 gateway：</p>
+<div class="highlight"><pre><span></span><code>openclaw gateway probe
+</code></pre></div>
+<p>查看日志：</p>
+<div class="highlight"><pre><span></span><code>journalctl --user -u openclaw-gateway -f
+</code></pre></div>
+<p>启动：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user start openclaw-gateway
+</code></pre></div>
+<p>停止：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user stop openclaw-gateway
+</code></pre></div>
+<p>重启：</p>
+<div class="highlight"><pre><span></span><code>systemctl --user restart openclaw-gateway
+</code></pre></div>
+<h1 id="openclaw-agent">二十七、OpenClaw 进阶玩法（Agent 自动化）</h1>
+<p>OpenClaw 不只是聊天 AI，它的真正用途是 <strong>自动执行任务的 AI Agent</strong>。</p>
+<p>核心能力：</p>
+<div class="highlight"><pre><span></span><code>任务自动化
+代码辅助
+工具调用
+数据处理
+文件操作
+</code></pre></div>
+<hr />
+<h1 id="1-agent">1 Agent 自动执行任务</h1>
+<p>普通 AI：</p>
+<div class="highlight"><pre><span></span><code>问答
+</code></pre></div>
+<p>OpenClaw：</p>
+<div class="highlight"><pre><span></span><code>规划任务 → 调用工具 → 执行 → 返回结果
+</code></pre></div>
+<p>示例：</p>
+<p>输入：</p>
+<div class="highlight"><pre><span></span><code>analyze this project and summarize the architecture
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>读取代码
+分析文件结构
+生成总结
+</code></pre></div>
+<hr />
+<h1 id="2_2">2 代码项目分析</h1>
+<p>OpenClaw 非常适合：</p>
+<div class="highlight"><pre><span></span><code>代码仓库分析
+</code></pre></div>
+<p>示例任务：</p>
+<div class="highlight"><pre><span></span><code>scan this repository and explain how it works
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>读取代码
+分析结构
+总结模块
+</code></pre></div>
+<p>适用于：</p>
+<div class="highlight"><pre><span></span><code>陌生项目
+开源代码
+大型仓库
+</code></pre></div>
+<hr />
+<h1 id="3_3">3 自动文档生成</h1>
+<p>可以让 Agent 自动生成文档。</p>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>generate README for this project
+</code></pre></div>
+<p>或者：</p>
+<div class="highlight"><pre><span></span><code>create documentation for all modules
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>扫描代码
+总结 API
+生成文档
+</code></pre></div>
+<hr />
+<h1 id="4_2">4 文件批处理</h1>
+<p>OpenClaw 可以处理本地文件。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>summarize all pdf files in this folder
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>读取 PDF
+提取内容
+生成摘要
+</code></pre></div>
+<p>适合：</p>
+<div class="highlight"><pre><span></span><code>论文整理
+资料总结
+</code></pre></div>
+<hr />
+<h1 id="5-github">5 GitHub 自动化</h1>
+<p>如果启用 <code>github skill</code>。</p>
+<p>Agent 可以：</p>
+<div class="highlight"><pre><span></span><code>clone repo
+create issue
+create PR
+review code
+</code></pre></div>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>clone the repository and explain the main modules
+</code></pre></div>
+<hr />
+<h1 id="6-coding-agent">6 Coding Agent</h1>
+<p>OpenClaw 可以当 <strong>本地编程助手</strong>。</p>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>write a python script that downloads images
+</code></pre></div>
+<p>或者：</p>
+<div class="highlight"><pre><span></span><code>refactor this code
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>生成代码
+解释代码
+优化代码
+</code></pre></div>
+<hr />
+<h1 id="7-shell">7 自动执行 Shell</h1>
+<p>OpenClaw 可以调用系统命令。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>list files
+analyze system
+run scripts
+</code></pre></div>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>check disk usage and summarize
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>df -h
+分析结果
+生成报告
+</code></pre></div>
+<hr />
+<h1 id="8_1">8 多步骤任务</h1>
+<p>OpenClaw 支持 <strong>任务链</strong>。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>download a dataset
+analyze it
+generate charts
+write a report
+</code></pre></div>
+<p>Agent 会：</p>
+<div class="highlight"><pre><span></span><code>step1 下载
+step2 处理
+step3 分析
+step4 生成结果
+</code></pre></div>
+<hr />
+<h1 id="9">9 自动化工作流</h1>
+<p>可以让 Agent 执行完整流程。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>scan new blog posts and summarize them daily
+</code></pre></div>
+<p>配合：</p>
+<div class="highlight"><pre><span></span><code>blogwatcher skill
+</code></pre></div>
+<p>Agent 自动：</p>
+<div class="highlight"><pre><span></span><code>监控 RSS
+生成摘要
+</code></pre></div>
+<hr />
+<h1 id="10-ai">10 本地 AI 助手</h1>
+<p>OpenClaw 可以作为：</p>
+<div class="highlight"><pre><span></span><code>本地 AI 助手
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>organize my documents
+summarize notes
+analyze logs
+</code></pre></div>
+<hr />
+<h1 id="11-canvas">11 Canvas 可视化</h1>
+<p>Canvas 可以显示：</p>
+<div class="highlight"><pre><span></span><code>图表
+UI
+HTML
+可视化结果
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>create a chart of this dataset
+</code></pre></div>
+<p>Agent 会生成：</p>
+<div class="highlight"><pre><span></span><code>图形
+表格
+可视化
+</code></pre></div>
+<hr />
+<h1 id="12-hooks">12 Hooks 自动执行</h1>
+<p>Hooks 可以自动执行任务。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>/new
+/reset
+</code></pre></div>
+<p>自动：</p>
+<div class="highlight"><pre><span></span><code>保存 session
+记录日志
+</code></pre></div>
+<hr />
+<h1 id="13-web-search">13 Web Search</h1>
+<p>如果配置：</p>
+<div class="highlight"><pre><span></span><code>BRAVE_API_KEY
+</code></pre></div>
+<p>Agent 可以：</p>
+<div class="highlight"><pre><span></span><code>搜索互联网
+</code></pre></div>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>search latest AI news
+</code></pre></div>
+<hr />
+<h1 id="14-agent">14 多 Agent 系统</h1>
+<p>OpenClaw 支持多个 Agent。</p>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>coding-agent
+research-agent
+analysis-agent
+</code></pre></div>
+<p>每个 Agent 可以使用：</p>
+<div class="highlight"><pre><span></span><code>不同模型
+不同 tools
+不同 skills
+</code></pre></div>
+<hr />
+<h1 id="15_1">15 实用任务示例</h1>
+<p>以下任务非常适合 OpenClaw：</p>
+<h3 id="_45">项目分析</h3>
+<div class="highlight"><pre><span></span><code>analyze this project architecture
+</code></pre></div>
+<hr />
+<h3 id="_46">代码解释</h3>
+<div class="highlight"><pre><span></span><code>explain this code
+</code></pre></div>
+<hr />
+<h3 id="pdf">PDF 总结</h3>
+<div class="highlight"><pre><span></span><code>summarize this research paper
+</code></pre></div>
+<hr />
+<h3 id="_47">日志分析</h3>
+<div class="highlight"><pre><span></span><code>analyze these logs and find errors
+</code></pre></div>
+<hr />
+<h3 id="_48">自动报告</h3>
+<div class="highlight"><pre><span></span><code>generate weekly report from these files
+</code></pre></div>
+<hr />
+<h1 id="_49">二十八、推荐技能组合</h1>
+<p>推荐启用：</p>
+<div class="highlight"><pre><span></span><code>github
+summarize
+nano-pdf
+clawhub
+blogwatcher
+</code></pre></div>
+<p>用途：</p>
+<div class="highlight"><pre><span></span><code>代码分析
+文档处理
+PDF解析
+自动更新
+</code></pre></div>
+<hr />
+<h1 id="_50">二十九、最佳实践</h1>
+<p>推荐：</p>
+<div class="highlight"><pre><span></span><code>一个 VM 一个 Agent
+</code></pre></div>
+<p>避免：</p>
+<div class="highlight"><pre><span></span><code>多个用户共享 agent
+</code></pre></div>
+<p>安全性更高。</p>
+<hr />
+<h1 id="_51">三十、完整使用流程</h1>
+<p>日常使用：</p>
+<div class="highlight"><pre><span></span><code>启动 Gateway
+↓
+打开 Dashboard
+↓
+创建 Session
+↓
+输入任务
+↓
+Agent 执行
+↓
+查看结果
+</code></pre></div>
+<hr />
+<h1 id="openclaw_4">三十一、OpenClaw 使用建议</h1>
+<p>OpenClaw 适合：</p>
+<div class="highlight"><pre><span></span><code>开发者
+研究人员
+自动化任务
+本地 AI 助手
+</code></pre></div>
+<p>不适合：</p>
+<div class="highlight"><pre><span></span><code>多用户公共服务
+高安全场景
+</code></pre></div>
+<hr />
+<h1 id="_52">三十二、文档结束</h1>
+<p>至此，本指南完成：</p>
+<p>内容包含：</p>
+<div class="highlight"><pre><span></span><code>安装
+配置
+调试
+安全
+迁移
+优化
+架构
+进阶使用
+</code></pre></div>
+<p>OpenClaw 本地部署已经可以 <strong>稳定运行并长期使用</strong>。</p>
+<h1 id="202637">2026.3.7更新</h1>
+<div class="highlight"><pre><span></span><code>  &quot;tools&quot;: {
+    &quot;profile&quot;: &quot;messaging&quot;
+  },
+</code></pre></div>
+<p>里面的 <code>profile</code> 可以设置为 <code>messaging</code> 或 <code>full</code>，新装版本默认messaging，功能受限。</p>
+<p>如果需要使用full功能，需要在openclaw.json中配置为full，然后重启即可。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023-现在 凶猫不太凶
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/626736057" target="_blank" rel="noopener" title="Bilibili | Xmbtx" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Xmbtx/xmbtx-blog/tree/master" target="_blank" rel="noopener" title="GitHub | Xmbtxの仓库" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M423.9 255.8 411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5 0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7-42.6-24.8-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6 0 0 139.3 80.9 139.5 81.1 16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7m-64.9-154A50.9 50.9 0 1 0 359 0a50.9 50.9 0 1 0 0 101.8M179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Xmbtx" target="_blank" rel="noopener" title="GitHub | Xmbtx" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
