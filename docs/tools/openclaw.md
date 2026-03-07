@@ -2625,3 +2625,15 @@ OpenClaw 适合：
 ```
 
 OpenClaw 本地部署已经可以 **稳定运行并长期使用**。
+
+# 2026.3.7更新
+
+```
+  "tools": {
+    "profile": "messaging"
+  },
+```
+
+里面的 `profile` 可以设置为 `messaging` 或 `full`，新装版本默认messaging，功能受限。
+
+如果需要使用full功能，需要在openclaw.json中配置为full，然后重启即可。
